@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoizonGod - Магазин стильной одежды</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    
+    <div class="logo">
+      <a href="index.html">
+        <div class="logo-img">PG</div>
+        <span class="logo-text">PoizonGod</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> О нас</a></li>
+        <li><a href="#products"><i class="fas fa-tshirt"></i> Товары</a></li>
+        <li><a href="#contacts"><i class="fas fa-address-book"></i> Контакты</a></li>
+        <li><a href="#cart" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+
+    <button class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+
+  </div>
+</header>
+
+<!-- Хиро секция -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Стиль, который <span class="highlight">вдохновляет</span></h1>
+      <p>Оригинальная брендовая одежда с доставкой по всей России</p>
+      <a href="#products" class="btn btn-hero">Смотреть коллекцию</a>
+    </div>
+  </div>
+</section>
+
+<main class="main">
+  <div class="container">
+
+    <!-- Баннер скидок -->
+    <div class="discount-banner">
+      <div class="banner-content">
+        <h3><i class="fas fa-gift"></i> Скидка 20% на первую покупку!</h3>
+        <p>Используй промокод: <strong>POIZON20</strong></p>
+        <button class="btn btn-copy" data-code="POIZON20">Скопировать код</button>
+      </div>
+    </div>
+
+    <h2 class="section-title" id="products">Наша коллекция</h2>
+
+    <div class="cards">
+
+      <!-- Худи New Balance -->
+      <div class="card">
+        <div class="badge new">Новинка</div>
+        <a class="product-link" data-product="1">
+          <div class="card-image">
+            <img src="img/hoodie.jpg" alt="Худи New Balance">
+          </div>
+          <div class="card-content">
+            <h3>Худи New Balance</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="rating-text">4.8/5</span>
+            </div>
+            <p class="card-description">Премиум качество, 100% хлопок</p>
+            <div class="price">
+              <span class="current-price">59 $</span>
+              <span class="old-price">69 $</span>
+            </div>
+            <div class="sizes">
+              <span class="size">S</span>
+              <span class="size">M</span>
+              <span class="size">L</span>
+              <span class="size">XL</span>
+            </div>
+          </div>
+        </a>
+        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> В корзину</button>
+      </div>
+
+      <!-- Футболка Adidas -->
+      <div class="card">
+        <a class="product-link" data-product="2">
+          <div class="card-image">
+            <img src="img/t-shirt-adidas.jpg" alt="Футболка Adidas">
+          </div>
+          <div class="card-content">
+            <h3>Футболка Adidas</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="rating-text">4.0/5</span>
+            </div>
+            <p class="card-description">Классика, 100% хлопок</p>
+            <div class="price">
+              <span class="current-price">39 $</span>
+            </div>
+            <div class="sizes">
+              <span class="size">XS</span>
+              <span class="size">S</span>
+              <span class="size">M</span>
+              <span class="size">L</span>
+            </div>
+          </div>
+        </a>
+        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> В корзину</button>
+      </div>
+
+      <!-- Худи Adidas -->
+      <div class="card">
+        <div class="badge bestseller">Хит продаж</div>
+        <a class="product-link" data-product="3">
+          <div class="card-image">
+            <img src="img/hoodie-adidas.jpg" alt="Худи Adidas">
+          </div>
+          <div class="card-content">
+            <h3>Худи Adidas</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="rating-text">5.0/5</span>
+            </div>
+            <p class="card-description">Спортивный стиль, капюшон</p>
+            <div class="price">
+              <span class="current-price">55 $</span>
+            </div>
+            <div class="sizes">
+              <span class="size">S</span>
+              <span class="size">M</span>
+              <span class="size">L</span>
+              <span class="size">XL</span>
+            </div>
+          </div>
+        </a>
+        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> В корзину</button>
+      </div>
+
+      <!-- Зипка Nike -->
+      <div class="card">
+        <div class="badge new">Новинка</div>
+        <a class="product-link" data-product="4">
+          <div class="card-image">
+            <img src="img/zipka-nike-teech.jpg" alt="Зипка Nike">
+          </div>
+          <div class="card-content">
+            <h3>Зипка Nike Tech</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="rating-text">4.7/5</span>
+            </div>
+            <p class="card-description">Технология Dri-FIT, легкая</p>
+            <div class="price">
+              <span class="current-price">79 $</span>
+              <span class="old-price">99 $</span>
+            </div>
+            <div class="sizes">
+              <span class="size">S</span>
+              <span class="size">M</span>
+              <span class="size">L</span>
+            </div>
+          </div>
+        </a>
+        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> В корзину</button>
+      </div>
+
+      <!-- Футболка Nike -->
+      <div class="card">
+        <a class="product-link" data-product="5">
+          <div class="card-image">
+            <img src="img/zipka-nike.jpg" alt="Футболка Nike">
+          </div>
+          <div class="card-content">
+            <h3>Зипка Nike</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="rating-text">4.2/5</span>
+            </div>
+            <p class="card-description">Минимализм, комфорт</p>
+            <div class="price">
+              <span class="current-price">49 $</span>
+            </div>
+            <div class="sizes">
+              <span class="size">XS</span>
+              <span class="size">S</span>
+              <span class="size">M</span>
+            </div>
+          </div>
+        </a>
+        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> В корзину</button>
+      </div>
+
+      <!-- Худи Nike -->
+      <div class="card">
+        <a class="product-link" data-product="6">
+          <div class="card-image">
+            <img src="img/nike-hoodie.jpg" alt="Худи Nike">
+          </div>
+          <div class="card-content">
+            <h3>Худи Nike</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="rating-text">4.6/5</span>
+            </div>
+            <p class="card-description">Мягкое, с логотипом</p>
+            <div class="price">
+              <span class="current-price">55 $</span>
+            </div>
+            <div class="sizes">
+              <span class="size">S</span>
+              <span class="size">M</span>
+              <span class="size">L</span>
+              <span class="size">XL</span>
+            </div>
+          </div>
+        </a>
+        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> В корзину</button>
+      </div>
+
+    </div>
+
+    <!-- Преимущества -->
+    <section class="features" id="about">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Гарантия качества</h3>
+          <p>100% оригинальная продукция с гарантией от производителя</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+          <h3>Быстрая доставка</h3>
+          <p>Доставка по России за 2-7 дней. Бесплатно при заказе от 100$</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <h3>Легкий возврат</h3>
+          <p>Возврат в течение 14 дней без объяснения причин</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Поддержка 24/7</h3>
+          <p>Круглосуточная поддержка по телефону, email и чату</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews">
+      <h2 class="section-title">Отзывы наших клиентов</h2>
+      <div class="reviews-slider">
+        <div class="review">
+          <div class="review-header">
+            <div class="review-avatar">АП</div>
+            <div class="review-info">
+              <h4>Алексей Петров</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Заказывал худи Nike. Качество превосходное! Доставили быстро, упаковка целая. Обязательно буду заказывать еще!"</p>
+          <span class="review-date">2 дня назад</span>
+        </div>
+        <div class="review">
+          <div class="review-header">
+            <div class="review-avatar">МС</div>
+            <div class="review-info">
+              <h4>Мария Смирнова</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Отличный магазин! Футболка Adidas сидит идеально. Цена адекватная для оригинального товара. Спасибо!"</p>
+          <span class="review-date">Неделю назад</span>
+        </div>
+        <div class="review">
+          <div class="review-header">
+            <div class="review-avatar">ДИ</div>
+            <div class="review-info">
+              <h4>Дмитрий Иванов</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Покупал зипку Nike. Качество на высоте, доставили раньше срока. Рекомендую этот магазин!"</p>
+          <span class="review-date">3 недели назад</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подписка на рассылку -->
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <h3><i class="fas fa-envelope"></i> Подпишитесь на новости</h3>
+        <p>Получайте первыми информацию о новых поступлениях, скидках и эксклюзивных предложениях!</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Ваш email" required>
+          <button type="submit" class="btn btn-subscribe">Подписаться</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="contacts">
+  <div class="container footer-inner">
+
+    <div class="footer-block">
+      <div class="logo-footer">
+        <div class="logo-img">PG</div>
+        <h3>PoizonGod</h3>
+      </div>
+      <p>Оригинальная одежда и стиль каждый день. Ваш проводник в мире моды.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-vk"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-block">
+      <h4>Категории</h4>
+      <ul>
+        <li><a href="#"><i class="fas fa-hoodie"></i> Худи и свитшоты</a></li>
+        <li><a href="#"><i class="fas fa-tshirt"></i> Футболки</a></li>
+        <li><a href="#"><i class="fas fa-jacket"></i> Куртки и ветровки</a></li>
+        <li><a href="#"><i class="fas fa-hat-cowboy"></i> Аксессуары</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-block">
+      <h4>Помощь</h4>
+      <ul>
+        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+        <li><a href="#"><i class="fas fa-truck"></i> Доставка и оплата</a></li>
+        <li><a href="#"><i class="fas fa-exchange-alt"></i> Возврат товара</a></li>
+        <li><a href="#"><i class="fas fa-file-contract"></i> Пользовательское соглашение</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-block">
+      <h4>Контакты</h4>
+      <ul class="contact-info">
+        <li><i class="fas fa-envelope"></i> info@poizongod.ru</li>
+        <li><i class="fas fa-phone"></i> +7 (900) 123-45-67</li>
+        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-21:00</li>
+        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская, д. 10</li>
+      </ul>
+      <div class="payment-methods">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-paypal"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2024 PoizonGod. Все права защищены.</p>
+      <p class="footer-links">
+        <a href="#">Политика конфиденциальности</a> | 
+        <a href="#">Карта сайта</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальные окна -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="product-details">
+      <img src="" alt="" class="product-image" id="modalImage">
+      <div class="product-info">
+        <h3 id="modalTitle"></h3>
+        <p class="product-price" id="modalPrice"></p>
+        <p class="product-description" id="modalDescription"></p>
+        <div class="product-actions">
+          <button class="btn btn-buy">Купить сейчас</button>
+          <button class="btn btn-cart">Добавить в корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Кнопка "Наверх" -->
+<button class="scroll-top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="java/script.js"></script>
+</body>
+</html>
